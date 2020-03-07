@@ -1,22 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { fullSpin } from './keyframes'
-import { variant } from './variants'
-
-const getMeasure = (measure, [sm, md, lg, xl]) => {
-  switch (measure) {
-    case 'sm':
-      return sm
-    case 'md':
-      return md
-    case 'lg':
-      return lg
-    case 'xl':
-      return xl
-    default:
-      return sm
-  }
-}
+import { variant, size } from './variants'
 
 const Svg = styled.svg`
   transition-property: transform;
@@ -24,17 +9,14 @@ const Svg = styled.svg`
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   ${variant}
+  ${size}
 `
 
-export function UnstableSpinner({ size, variant }) {
-  const calcSize = `${
-    typeof size === 'number' ? size : getMeasure(size, [1.5, 2, 3, 4])
-  }rem`
+export function Spinner({ size, variant }) {
   return (
     <Svg
       variant={variant}
-      height={calcSize}
-      width={calcSize}
+      size={size}
       style={{ animationDuration: '500ms' }}
       role='img'
       viewBox='0 0 32 32'
@@ -53,7 +35,7 @@ export function UnstableSpinner({ size, variant }) {
   )
 }
 
-UnstableSpinner.defaultProps = {
+Spinner.defaultProps = {
   size: 'md',
   variant: 'primary',
 }

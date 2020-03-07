@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "autoprefixer": "^9.7.4",
     "babel-plugin-macros": "^2.8.0",
+    "docz": "^2.2.0",
     "postcss-cli": "^7.1.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -17,6 +18,9 @@
     "tailwindcss": "^1.2.0"
   },
   "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve",
     "build:css": "postcss src/design-system/theme/tailwind.css -o src/design-system/styles.css",
     "watch:css": "postcss src/design-system/theme/tailwind.css -o src/design-system/styles.css",
     "start": "yarn run watch:css & react-scripts start",

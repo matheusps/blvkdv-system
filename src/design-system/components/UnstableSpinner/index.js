@@ -26,7 +26,7 @@ const Svg = styled.svg`
   ${variant}
 `
 
-export default function Spinner({ size, variant }) {
+export function UnstableSpinner({ size, variant }) {
   const calcSize = `${
     typeof size === 'number' ? size : getMeasure(size, [1.5, 2, 3, 4])
   }rem`
@@ -53,7 +53,7 @@ export default function Spinner({ size, variant }) {
   )
 }
 
-Spinner.defaultProps = {
+UnstableSpinner.defaultProps = {
   size: 'md',
   variant: 'primary',
 }

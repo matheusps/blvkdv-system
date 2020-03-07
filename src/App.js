@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
 
-function App() {
+import { UnstableSpinner } from "./design-system";
+
+const Title = styled.h1`
+  font-size: 50px;
+`;
+
+const Container = styled.div.attrs({
+  className: 'w-full h-screen bg-gray-100 p-2',
+})``
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Title>Testing</Title>
+      <UnstableSpinner variant="secondary" />
+    </Container>
   );
 }
-
-export default App;

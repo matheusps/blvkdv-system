@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { UnstableSpinner } from './design-system/components/UnstableSpinner'
+import { Spinner } from './design-system/components/Spinner'
 import { GlobalStyle } from './design-system/components/GlobalStyle'
 
 export default function App() {
@@ -12,8 +12,8 @@ export default function App() {
       <h4>Heading 4</h4>
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
-      <UnstableSpinner variant='primary' />
-      <UnstableSpinner variant='secondary' />
+      <Spinner variant='primary' />
+      <Spinner variant='secondary' />
     </GlobalStyle>
   )
 }

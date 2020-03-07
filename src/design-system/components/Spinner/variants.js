@@ -12,3 +12,21 @@ export const variant = buildVariant({
     },
   },
 })
+
+export const size = buildVariant({
+  name: 'size',
+  variant: {
+    sm: {
+      width: '1.5rem',
+      height: '1.5rem',
+    },
+    md: {
+      width: '2rem',
+      height: '2rem',
+    },
+    lg: {
+      width: '3rem',
+      height: '3rem',
+    },
+  },
+})

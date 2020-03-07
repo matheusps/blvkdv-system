@@ -17,10 +17,10 @@
     "tailwindcss": "^1.2.0"
   },
   "scripts": {
-    "build:css": "postcss src/design-system/tailwind.css -o src/design-system/blvkdv.css",
-    "watch:css": "postcss src/design-system/tailwind.css -o src/design-system/blvkdv.css",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build:css": "postcss src/design-system/theme/tailwind.css -o src/design-system/styles.css",
+    "watch:css": "postcss src/design-system/theme/tailwind.css -o src/design-system/styles.css",
+    "start": "yarn run watch:css & react-scripts start",
+    "build": "yarn run build:css & react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

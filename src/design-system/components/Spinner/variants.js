@@ -1,5 +1,6 @@
 import buildVariant from '../../style-engine/buildVariant'
 import colors from '../../theme/colors'
+import spacing from '../../theme/spacing'
 
 export const variant = buildVariant({
   name: 'variant',
@@ -17,16 +18,16 @@ export const size = buildVariant({
   name: 'size',
   variant: {
     sm: {
-      width: '1.5rem',
-      height: '1.5rem',
+      width: spacing[8],
+      height: spacing[8],
     },
     md: {
-      width: '2rem',
-      height: '2rem',
+      width: spacing[10],
+      height: spacing[10],
     },
     lg: {
-      width: '3rem',
-      height: '3rem',
+      width: spacing[12],
+      height: spacing[12],
     },
   },
 })

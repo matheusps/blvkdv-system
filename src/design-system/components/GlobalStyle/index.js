@@ -2,17 +2,8 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 export const GlobalStyle = styled.div.attrs({
-  className: 'w-full h-screen p-2 bg-base text-on-base',
+  className: 'w-full h-screen p-2',
 })`
-  & h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    ${tw`text-on-base`}
-  }
   & h1 {
     ${tw`text-6xl`}
   }

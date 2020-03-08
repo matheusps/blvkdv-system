@@ -6,6 +6,7 @@ module.exports = {
     },
     extend: {
       colors: require('./colors'),
+      spacing: require('./spacing'),
     },
   },
   variants: {},
